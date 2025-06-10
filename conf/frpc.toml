@@ -1,9 +1,22 @@
-serverAddr = "127.0.0.1"
+serverAddr = ""
 serverPort = 7000
+auth.method = "token"
+auth.token = ""
 
 [[proxies]]
-name = "test-tcp"
+name = "ssh"
 type = "tcp"
-localIP = "127.0.0.1"
+localIP = "192.168.1.8"
 localPort = 22
-remotePort = 6000
+remotePort = 7001
+
+
+[[proxies]]
+name = "web"
+type = "tcp"
+localIP = "portal"
+localPort = 3000
+remotePort = 7002
+
+
+

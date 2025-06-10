@@ -1,1 +1,10 @@
 bindPort = 7000
+webServer.addr = "0.0.0.0"
+webServer.port = 7500
+webServer.user = "frpsadmin"
+webServer.password = ""
+auth.token = ""
+
+allowPorts = [
+  { start = 7001, end = 7499 }
+]
